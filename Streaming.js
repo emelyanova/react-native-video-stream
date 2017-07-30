@@ -38,7 +38,7 @@ class Stream extends Component {
 		onReady: PropTypes.func,
 		onPending: PropTypes.func,
 		onStart: PropTypes.func,
-		onError: PropTypes.func,
+		onPlayerError: PropTypes.func,
 		onStop: PropTypes.func,
 		...View.propTypes,
 	}
@@ -89,7 +89,7 @@ class Stream extends Component {
 			onReady: this._onReady,
 			onPending: this._onPending,
 			onStart: this._onStart,
-			onError: this._onError,
+			onPlayerError: this._onError,
 			onStop: this._onStop,
 			...this.props,
 			style: {
